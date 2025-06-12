@@ -1,4 +1,9 @@
-  task_test.c (task_test.h) 
-   Non-Blocking & Update By Time Code -> Test Code Integration
-  
-...
+task_test_attribute.h 
+	-Se definen el tipo de dato task_test_dta_t mediante una esctructura que almacena una variable uint32_t
+
+
+task_test.c	
+	-Se declaran una varibale del tipo task_test_dta_t, punteros de tipo const char y variables de tipo uint32_t para almacenar contadores
+	-La funcion task_test_init inicia la tarea e imprime en la pantalla "TdSE Bienvenidos" y "Test Nro: " , mediante el metodo displayCharPositionWrite(0, 0); se selecciona la posicion de la pantalla en donde se imprime 
+	-La funcion void task_test_update(void *parameters) Incrementa el contador global  contador global p_task_test_dta->tick y revisa si debe hacer una actualización, basándose en un tick interno y actualiza el display mostrando el valor del contador cada cierto tiempo.
+

@@ -96,7 +96,7 @@ void task_test_init(void *parameters)
     displayInit( DISPLAY_CONNECTION_GPIO_4BITS );
 
     displayCharPositionWrite(0, 0);
-	displayStringWrite("TdSE Bienvenidos");
+	displayStringWrite("asd TdSE Bienvenidos");
 
 	displayCharPositionWrite(0, 1);
 	displayStringWrite("Test Nro: ");
